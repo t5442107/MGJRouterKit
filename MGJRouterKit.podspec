@@ -49,7 +49,8 @@ Pod::Spec.new do |s|
   s.source_files = 'MGJRouterKit/Classes/**/*.{h,m}'
 
   # 依赖
-  s.dependency 'MGJRouter' , :git => 'https://github.com/t5442107/MGJRouter.git'
+   # s.dependency 'MGJRouter' , :git => 'https://github.com/t5442107/MGJRouter.git'
+  s.dependency  = { :git => 'https://github.com/t5442107/MGJRouter.git', :tag => s.version.to_s }
   
   # 公开的头文件
   s.prefix_header_contents = '#import "MGJRouterKit.h"'
